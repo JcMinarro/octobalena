@@ -42,5 +42,5 @@ COPY ./mqtt_espurna_control.py /usr/src/octobalena/mqtt_espurna_control.py
 COPY ./supervisord.conf /etc/supervisor/supervisord.conf
 COPY ./udevd.sh /app/udevd.sh
 
-CMD ["/app/udevd.sh"]
+CMD ["bash","/app/udevd.sh"]
 

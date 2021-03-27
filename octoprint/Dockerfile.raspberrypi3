@@ -81,4 +81,4 @@ COPY ./supervisord.conf /etc/supervisor/supervisord.conf
 COPY ./udevd.sh /app/udevd.sh
 COPY ./haproxy.cfg /etc/haproxy/haproxy.cfg
 
-CMD ["/app/udevd.sh"]
+CMD ["bash","/app/udevd.sh"]
